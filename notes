@@ -1,0 +1,14 @@
+pwd - tells you what directory you are in
+ls -list
+cd -change directory
+cd .. - brings you out one folder
+mkdir - makes a folder
+rm - removes a file
+rmdir - removes directory
+
+git add --all  -puts the changes in the folder
+git commit -m "message" - puts the title on it to be sent
+git push -sends it to hub
+git status - shows you the files that need to be staged for commit
+git diff - shows you everything you've changed since you last committed
+ 
