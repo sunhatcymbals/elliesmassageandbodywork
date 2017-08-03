@@ -1,12 +1,12 @@
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
   <title> Ellie's Massage </title>
   <style>
    body {
      margin: 0;
      padding: 0;
-     font-family: "Open Sans";
+     font-family: "katibeh";
   }
   #header{
     padding: 20px;
@@ -16,28 +16,31 @@
   /* header sections */
   #left-container {
     display: inline-block;
-    width: 130px;
+    width: 135px;
+    font-size: 40px;
+
   }
   #right-container {
     display: inline-block;
     width: calc(100% - 135px);
     text-align:right;
+    font-size: 30px;
   }
 
   /* links */
   #right-container a.active {
-    color: blue;
+    color: orange;
   }
   #right-container a:hover {
-    color: blue;
+    color: orange;
   }
 
-.flowers-img {
+.red-living-room-img {
   width: 100%;
   height: 100%;
-  background: url(img/paper-flowers.JPG);
+  background: url(img/red-living-room.JPG);
   background-size: cover;
-  position: fixed;
+  position: absolute;
 }
   </style>
 </head>
@@ -45,18 +48,17 @@
   <div id="page">
     <div id="header">
       <div id="left-container">
-        Ellies Massage
+        ELLIES MASSAGE AND BODYWORK
       </div>
       <div id="right-container">
-        <a>contact</a>
-        <a>pricing</a>
-        <a>about</a>
-        <a>services</a>
-        <a class="active">home</a>
+        <a>Contact</a>
+        <a>Pricing and Services</a>
+        <a>About</a>
+        <a class="active">Home</a>
       </div>
     </div>
     <div id="body">
-      <div class="flowers-img"></div>
+      <div class="red-living-room-img"></div>
     </div>
 
     <div id="footer"></div>
