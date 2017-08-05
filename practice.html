@@ -1,0 +1,110 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
+  <title> Ellie's Massage </title>
+  <style>
+   body {
+     margin: 0;
+     padding: 0;
+     font-family: "katibeh";
+     font-size: 60;
+  }
+#body {
+  text-align: center;
+}
+
+  #header{
+    padding: 20px;
+    background: #ededed;
+  }
+
+  /* header sections */
+  #left-container {
+    display: inline-block;
+    width: 600px;
+    font-size: 40px;
+
+  }
+  #right-container {
+    display: inline-block;
+    width: calc(100% - 630px);
+    text-align:right;
+    font-size: 30px;
+
+  }
+
+  #main-content-container {
+    width: 600px;
+    display: inline-block;
+    height: 300px;
+    padding-top: 300px;
+
+
+  }
+
+  /* links */
+  .link,
+  .link.active,
+  .link:visited,
+  .link:hover {
+    color: black;
+    text-decoration: none;
+  }
+  .link:visited {
+    color: purple;
+  }
+  .link:hover {
+    color: orange;
+  }
+
+
+.red-living-room-img {
+  width: 100%;
+  height: 100%;
+  background: url(img/red-living-room.JPG);
+  background-size: cover;
+  position: absolute;
+}
+
+
+#big-words:hover {
+  background: white;
+}
+
+#big-words {
+  padding: 20px;
+line-height: 60px;
+vertical-align: top;
+height: 33px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="page">
+    <div id="header">
+      <div id="left-container">
+        ELLIES MASSAGE AND BODYWORK
+      </div>
+      <div id="right-container">
+        <a class="link" href="contact.html">Contact</a>
+        <a class="link" href="pricing.html">Pricing and Services</a>
+        <a class="link" href="about.html">About</a>
+        <a class="link active">Home</a>
+      </div>
+    </div>
+    <div id="body">
+      <div class="red-living-room-img">
+        <div id="main-content-container">
+          <div id="biggest-words">BIGGEST WORDS</div>
+            <div id="bigger-words">BIGGER WORDS</div>
+            <div class="link" id="big-words">BIG WORDS</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </div>
+</body>
