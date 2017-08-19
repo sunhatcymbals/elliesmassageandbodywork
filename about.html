@@ -1,2 +1,138 @@
+<html>
+<head>
+
+  <script>
+    // var flower = "fred";
+    // console.log(flower)
+    // function flower(word, word2) {
+    //   console.log("word 1: " + word)
+    //   console.log("word 2: " + word2)
+    // }
+    //
+    // flower("fred","naked")
+    // flower("baby", "fever")
+    // flower("shit", "mouse")
+
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <title> Ellie's Massage </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "katibeh";
+      font-size: 60;
+    }
+
+    #body {
+      text-align: center;
+    }
+
+    #header{
+      padding: 20px;
+      background: white;
+    }
+
+    /* header sections */
+    #left-container {
+      display: inline-block;
+      width: 600px;
+      font-size: 40px;
+
+    }
+    #right-container {
+      display: inline-block;
+      width: calc(100% - 630px);
+      text-align:right;
+      font-size: 30px;
+
+    }
+
+    #main-content-container {
+      width: 600px;
+      display: inline-block;
+      height: 300px;
+      padding-top: 300px;
+
+
+    }
+
+    /* links */
+    .link,
+    .link.active,
+    .link:visited,
+    .link:hover {
+      color: black;
+      text-decoration: none;
+    }
+    .link:visited {
+      color: purple;
+    }
+    .link:hover {
+      color: orange;
+    }
+
+
+    .front-door-img {
+      width: 100%;
+      height: 100%;
+      background: url(img/front-doorc2.JPG);
+      background-size: cover;
+      position: relative;
+    }
+
+    #book-now:hover {
+      background: white;
+    }
+
+    #book-now {
+      padding: 20px;
+      line-height: 60px;
+      vertical-align: top;
+      height: 33px;
+    }
+
+    .ellies-social-icons {
+      font-size: 30px;
+    }
+
+    #footer {
+      text-align: center;
+    }
+    .always-black {
+      color: black !important;
+    }
+  </style>
+</head>
 <body>
-<div>ABOUT</div>
+  <div id="page">
+    <div id="header">
+      <div id="left-container">
+        ELLIES MASSAGE AND BODYWORK
+      </div>
+      <div id="right-container">
+        <a class="link" href="contact.html">Contact</a>
+        <a class="link" href="pricing.html">Services</a>
+        <a class="link" href="practice.html">About</a>
+        <a class="link active">About</a>
+      </div>
+    </div>
+    <div id="body">
+      <div class="front-door-img">
+        <div id="main-content-container">
+            <div id="slogan">I am a California certified Massage Therapist in Costa Mesa CA </br>
+              who provides massage on an outcall (home visit) basis. </br>
+              With years of experience as a massage professional in both the spa and clinical setting, </br>
+              I am dedicated to giving my clients quality individual based treatments to best fit their needs.</div>
+            <div class="link" id="book-now">BOOK NOW</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a href="http://instagram.com/wellnesswithellie" class="always-black link"><i class="ellies-social-icons fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="http://facebook.com/elliesmassageandbodywork/" class="always-black link"><i class="ellies-social-icons fa fa-facebook" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</body>

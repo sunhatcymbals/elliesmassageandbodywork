@@ -1,0 +1,49 @@
+<style>
+#ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  position: absolute;
+}
+#buttons-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+</style>
+<div style="top: 0; left: 0; background-color: red;" id="ball"></div>
+
+<div id="buttons-container">
+  <button id="move-left">Move Left</button>
+  <button id="move-right">Move Right</button>
+  <button id="move-up">Move Up</button>
+  <button id="move-down">Move Down</button>
+  <button id="change-color">Change Color</button>
+</div>
+
+<script>
+function moveLeft() {
+  var ball = document.querySelector('#ball') // get the ball
+  var left = ball.style.left // get the ball's left property ("0px")
+  var leftAsNumber = left.replace('px', '') * 1 // remove the "px" from the left property and turn it into a integer (0)
+  var newLeft = leftAsNumber - 5; // take that integer (0) and subtract 5 from it (-5)
+  ball.style.left = newLeft + "px" // take the new number and attach it back to the ball ("-5px")
+}
+
+function moveRight() {
+  var ball = document.querySelector('#ball') // get the ball
+  var left = ball.style.left // get the ball's left property ("0px")
+  var leftAsNumber = left.replace('px', '') * 1 // remove the "px" from the left property and turn it into a integer (0)
+  var newLeft = leftAsNumber + 5; // take that integer (0) and add 5 to it (5)
+  ball.style.left = newLeft + "px" // take the new number and attach it back to the ball ("5px")
+}
+
+function loadEventHandlers() {
+  document.querySelector('#move-left').addEventListener('click', moveLeft)
+  document.querySelector('#move-right').addEventListener('click', moveRight)
+}
+window.onload = loadEventHandlers;
+</script>
