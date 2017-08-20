@@ -1,0 +1,13 @@
+.ui.button {
+  padding: 20px 40px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.ui.button.green {
+  background: #9fb334;
+}
+
+.ui.button.green:hover {
+  background: #bdd440;
+}

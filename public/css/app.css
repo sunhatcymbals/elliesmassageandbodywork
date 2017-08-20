@@ -1,0 +1,451 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+  font-weight: 300;
+}
+
+.animated {
+  -webkit-animation-duration: 400ms !important;
+  -moz-animation-duration: 400ms !important;
+  animation-duration: 400ms !important;
+}
+
+.full-page-height {
+  min-height: 600px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.1);
+  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.1);
+  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.1);
+}
+
+.drop-shadow {
+  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+}
+
+.divider {
+  border-top: solid thin #e6e6e6;
+}
+
+.note {
+  font-size: 20px;
+  color: #bbbbbb;
+  font-family: Raleway;
+  padding: 20px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background: url(/img/sweet-kona-chair.jpg);
+  border-radius: 200px;
+  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+}
+
+.full-page-height > .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.full-page-height > .body {
+  position: relative;
+  z-index: 1;
+}
+
+.full-page-height > .title {
+  padding: 80px 0;
+  font-size: 40px;
+  color: #424242;
+  font-family: Raleway;
+  text-align: center;
+}
+
+.hide-desktop {
+  display: none;
+}
+
+/*
+** HERO
+** ----
+*/
+
+#hero {
+  height: 100vh;
+  background: url(/img/green-window.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hero .links {
+  height: 100px;
+  /*background: rgba(250, 251, 235, 0.6);*/
+  padding: 50px;
+  text-align: center;
+}
+
+#hero .links a {
+  color: rgba(255, 255, 255, .8);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+#hero .links a.link-title {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 10px;
+}
+
+#hero .hamburger-container {
+  position: absolute;
+  right: 0;
+  padding: 45px 50px;
+  display: none;
+  z-index: 2;
+}
+
+#hero .hamburger-container i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+#hero .hamburger-container i:hover {
+  color: whitesmoke;
+}
+
+#hero .body {
+  height: calc(100% - 100px);
+  text-align: center;
+}
+
+#hero .body .inner-container {
+  width: 800px;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  display: inline-block;
+  padding: 40px;
+  color: white;
+}
+
+#hero .body .inner-container .title {
+  font-size: 50px;
+  line-height: 66px;
+  margin-bottom: 10px;
+}
+
+
+#hero .body .inner-container .slogan {
+  font-size: 40px;
+  line-height: 66px;
+  margin-bottom: 30px;
+}
+
+#hero .body .inner-container .button-container {
+
+}
+
+/*
+** ABOUT
+** -------
+*/
+
+#about {
+  background: white;
+  padding-bottom: 200px;
+  font-family: Raleway;
+}
+
+#about .avatar-container {
+  width: calc(40% - 2px);
+  display: inline-block;
+  text-align: right;
+  padding: 20px;
+}
+
+#about .description-container {
+  width: calc(60% - 2px);
+  display: inline-block;
+  text-align: left;
+  font-size: 22px;
+  padding: 20px;
+  vertical-align: top;
+}
+
+#about .description-container .description-title {
+  font-size: 40px;
+  padding: 0 35px 0 35px;
+}
+
+#about .description-container .description-content {
+  max-width: 500px;
+  padding: 35px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+#about .description-container .button-container {
+  max-width: 500px;
+  padding: 0 35px 0 35px;
+  vertical-align: top;
+}
+
+
+/*
+** PRICING
+** -------
+*/
+
+#pricing {
+  color: #65515e;
+  background: #f9f9f7;
+}
+
+#pricing .title {
+  color: #65515e;
+  text-align: center;
+}
+
+#pricing .products-container {
+  text-align: center;
+  padding-top: 0px;
+}
+
+#pricing .product {
+  display: inline-block;
+  width: 400px;
+  padding: 50px;
+  margin: 0 25px;
+  border-radius: 4px;
+  font-family: Raleway;
+}
+
+#pricing .product .name {
+  font-size: 40px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: solid thin #e6e6e6;
+}
+
+#pricing .product .prices {
+  text-align: left;
+}
+
+#pricing .product .item {
+  margin-bottom: 10px;
+}
+
+#pricing .product .item .hours {
+  display: inline-block;
+  font-size: 24px;
+  padding: 12px;
+  width: 210px;
+}
+
+#pricing .product .item .cost {
+  display: inline-block;
+  font-size: 24px;
+  /* width: 40px; */
+  padding: 12px;
+  background: #9fb334;
+  color: white;
+  border-radius: 3px;
+}
+
+#pricing .divider {
+  width: 80%;
+  position: relative;
+  margin: 40px 10%;
+}
+
+/* ADDONS */
+
+#pricing .addons-container {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+#pricing .addons-container > .title {
+  font-size: 40px;
+  font-family: Raleway;
+  padding: 80px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#pricing .addons-container .addons-inner-container {
+  text-align: center;
+  max-width: 1000px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.addon {
+  width: 300px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.addon .title {
+  font-family: Raleway;
+  font-size: 24px;
+  padding-bottom: 20px;
+  border-bottom: solid thin #e6e6e6;
+  margin-bottom: 20px;
+}
+
+.addon .description {
+  font-size: 16px;
+}
+
+.addon .price {
+  background: #9fb334;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+#contact {
+  background: white;
+}
+
+#contact .body {
+  text-align: center;
+}
+
+#contact .body .contact-item {
+  /*background: white;*/
+  font-size: 16px;
+  color: #565656;
+}
+
+#contact .body .contact-item .label {
+  width: 117px;
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: right;
+  background: #fbfbfb;
+  font-family: Raleway;
+}
+
+#contact .body .contact-item .value {
+  display: inline-block;
+  padding: 12px;
+  width: 277px;
+  text-align: left;
+}
+
+#contact .book-container {
+  margin: 30px 0;
+}
+
+#contact .book-container button a {
+  color: white;
+}
+
+
+#contact .body .note {
+  margin-top: 30px;
+  max-width: 600px;
+  display: inline-block;
+  padding: 20px;
+}
+
+/*
+** SIDEBAR STYLES
+*/
+
+#sidebar {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  z-index: 3;
+  background: #f5f4ef;
+  transition: right 300ms ease-in-out;
+  right: -300px;
+}
+
+#sidebar-overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: rgba(45, 45, 45, 0.8);
+}
+
+#sidebar a {
+  width: 100%;
+  padding: 36px;
+  display: block;
+  border-bottom: solid thin #f4f3ee;
+  color: #737373;
+  font-size: 29px;
+  font-family: Raleway;
+}
+
+#sidebar a:hover {
+  background: #e6e6e3;
+}
+
+
+/*
+** HEADER
+** ------
+*/
+
+#header {
+  display: none;
+  padding: 10px 20px;
+  background: #fbfbfb;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  z-index: 2;
+}
+
+body[show-header="true"] #header {
+  display: block;
+  top: 0;
+}
+
+#header .links {
+  /*height: 100px;*/
+  /*background: rgba(250, 251, 235, 0.6);*/
+  padding: 10px;
+  text-align: center;
+}
+
+#header .links a {
+  color: rgba(144, 144, 144, 0.8);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 10px;
+  font-family: Raleway;
+}
+
+#header .hamburger-container {
+  text-align:right;
+}
+
+#header .hamburger-container i {
+  font-size: 25px;
+  color: #797878;
+}

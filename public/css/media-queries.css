@@ -1,0 +1,49 @@
+@media(max-width: 800px) {
+  #hero .links {
+    display: none;
+  }
+
+  #hero .hamburger-container {
+    display: block;
+  }
+
+  #hero .body .inner-container {
+    width: 100%;
+  }
+
+  #hero .body .inner-container .title {
+    font-size: 40px;
+  }
+
+  #hero .body .inner-container .slogan {
+    font-size: 30px;
+  }
+
+  #pricing .product {
+    margin: 0;
+  }
+
+  body[show-sidebar="true"] #sidebar,
+  body[show-sidebar="true"] #sidebar-overlay {
+    display: block;
+  }
+  body[show-sidebar="true"] #sidebar {
+    right: 0;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .hide-desktop {
+    display: block;
+  }
+}
+
+@media(max-width: 600px) {
+  #about .avatar-container,
+  #about .description-container {
+    width: 100%;
+    text-align: center;
+  }
+}
