@@ -31,15 +31,16 @@ body {
 
 .note {
   font-size: 20px;
-  color: #bbbbbb;
+  color: #828282;
   font-family: Raleway;
   padding: 20px;
+  line-height: 26px;
 }
 
 .avatar {
   width: 200px;
   height: 200px;
-  background: url(/img/sweet-kona-chair.jpg);
+  background: url(/img/ellie.JPG);
   border-radius: 200px;
   -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
   -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
@@ -288,7 +289,7 @@ body {
 
 #pricing .addons-container .addons-inner-container {
   text-align: center;
-  max-width: 1000px;
+  max-width: 710px;
   display: inline-block;
   margin-bottom: 50px;
 }
@@ -297,6 +298,7 @@ body {
   width: 300px;
   display: inline-block;
   margin-bottom: 50px;
+  vertical-align: top;
 }
 
 .addon .title {
@@ -309,6 +311,7 @@ body {
 
 .addon .description {
   font-size: 16px;
+  height: 60px;
 }
 
 .addon .price {
