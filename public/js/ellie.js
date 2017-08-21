@@ -32,6 +32,15 @@ $(document).ready(function() {
     }
   })
 
+  // check location
+  var hash = window.location.hash.replace('#', '')
+  if (hash) {
+    $('html, body').animate({
+      scrollTop: $('#' + hash).offset().top
+    }, 500)
+  }
+  // if (hash.replace('#', ''))
+
   $('.scroll-to-contact').bind('click', function() {
     $('html, body').animate({
       scrollTop: $('#contact').offset().top
