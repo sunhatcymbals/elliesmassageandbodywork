@@ -1,0 +1,1 @@
+gcloud compute ssl-certificates create ellies-massage-and-bodywork-cert --certificate ./example.crt --private-key ./example.key
