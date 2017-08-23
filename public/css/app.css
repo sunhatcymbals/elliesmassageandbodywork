@@ -149,9 +149,17 @@ body {
 
 
 #hero .body .inner-container .slogan {
-  font-size: 40px;
+  font-size: 28px;
   line-height: 66px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  color: rgb(216, 216, 216);
+}
+
+#hero .body .inner-container .slogan2 {
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: rgb(216, 216, 216);
 }
 
 #hero .body .inner-container .button-container {
