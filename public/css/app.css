@@ -14,9 +14,9 @@ body {
 .full-page-height {
   min-height: 600px;
   position: relative;
-  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.1);
-  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.1);
-  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.02);
+  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.02);
+  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.02);
 }
 
 .drop-shadow {
@@ -42,9 +42,9 @@ body {
   height: 200px;
   background: url(/img/Ellie3.jpg);
   border-radius: 200px;
-  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
-  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
-  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.04);
+  -moz-box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.04);
+  box-shadow: 10px 10px 63px -27px rgba(0,0,0,0.04);
   background-repeat: no-repeat;
   background-size: cover;
   display:inline-block;
@@ -73,6 +73,51 @@ body {
 
 .hide-desktop {
   display: none;
+}
+
+/*
+** MODALS
+** -----
+*/
+.ui.page.dimmer {
+  background: rgba(255, 255, 255, .99) !important;
+}
+
+#new-client-special-popup {
+  color: black;
+}
+
+#new-client-special-popup .header {
+  font-size: 32px;
+  color: black;
+  border-bottom-color: transparent;
+}
+
+#new-client-special-popup .header i {
+
+}
+
+#new-client-special-popup .content {
+  text-align:center;
+  font-size:28px;
+  padding: 40px 0;
+  border-color: transparent;
+}
+
+#new-client-special-popup .actions {
+  text-align: center;
+  color: black;
+  border-top-color: transparent;
+}
+
+#new-client-special-popup .actions .cancel {
+  /*color: black;*/
+  /*border-color: black;*/
+  text-align: center;
+}
+
+#new-client-special-popup .actions .ok {
+  text-align: center;
 }
 
 /*
@@ -197,19 +242,40 @@ body {
 #about .description-container .description-title {
   font-size: 40px;
   padding: 0 35px 0 35px;
+  font-weight: 100;
+  margin-bottom: 0;
+  font-family: Raleway;
 }
 
 #about .description-container .description-content {
   max-width: 500px;
-  padding: 35px;
+  padding: 30px 35px;
   vertical-align: top;
+  font-weight: 100;
   font-size: 18px;
+  margin: 0;
+  font-family: "Open Sans";
 }
 
 #about .description-container .button-container {
   max-width: 500px;
   padding: 0 35px 0 35px;
   vertical-align: top;
+  display: none;
+}
+
+#about .social-media-links-container {
+  margin-top: 40px;
+}
+
+.social-media-links-container {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-media-links-container a {
+  color: gray;
+  margin: 0 10px;
 }
 
 
@@ -239,7 +305,7 @@ body {
   padding: 50px;
   margin: 0 25px;
   border-radius: 4px;
-  font-family: Raleway;
+  font-family: Open Sans;
 }
 
 #pricing .product .name {
@@ -290,7 +356,7 @@ body {
 
 #pricing .addons-container > .title {
   font-size: 40px;
-  font-family: Raleway;
+  font-family: Open Sans;
   padding: 80px;
   text-align: center;
   margin-bottom: 30px;
@@ -311,7 +377,7 @@ body {
 }
 
 .addon .title {
-  font-family: Raleway;
+  font-family: Open Sans;
   font-size: 24px;
   padding-bottom: 20px;
   border-bottom: solid thin #e6e6e6;
@@ -331,10 +397,20 @@ body {
   display: inline-block;
   margin-top: 20px;
   border-radius: 2px;
+  font-family: Open Sans;
 }
+
+/*
+** CONTACT
+** -------
+*/
 
 #contact {
   background: white;
+}
+
+#contact > .title {
+  padding: 60px 0;
 }
 
 #contact .body {
@@ -345,6 +421,7 @@ body {
   /*background: white;*/
   font-size: 16px;
   color: #565656;
+  margin: 15px 0;
 }
 
 #contact .body .contact-item .label {
@@ -363,20 +440,25 @@ body {
   text-align: left;
 }
 
-#contact .book-container {
-  margin: 30px 0;
-}
-
-#contact .book-container button a {
+#contact .contact-item button a {
   color: white;
 }
 
+#contact .body .note-container {
+  text-align: center;
+}
 
 #contact .body .note {
-  margin-top: 30px;
   max-width: 600px;
-  display: inline-block;
   padding: 20px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+#contact .body .note.clients-note {
+  margin-top: 60px;
 }
 
 /*

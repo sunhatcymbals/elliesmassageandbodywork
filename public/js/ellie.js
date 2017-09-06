@@ -19,6 +19,13 @@ function hideHeader() {
 
 // when the page is done loading
 $(document).ready(function() {
+  // show new client popup
+  $('#new-client-special-popup').modal({inverted: true}).modal('show')
+
+  $('#popup-book-action').bind('click', function() {
+    $('#new-client-special-popup').modal('hide')
+  })
+
   $(window).bind('scroll', function() {
     var scrollTop = $('body').scrollTop()
     var heroHeight = $('#hero').height()

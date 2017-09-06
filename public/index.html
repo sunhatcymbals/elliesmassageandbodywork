@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/css/semantic-ui-overrides.css">
   <link rel="stylesheet" href="/css/media-queries.css">
   <script src='/js/jquery.js'></script>
+  <script src='/js/semantic-ui.min.js'></script>
   <script src='/js/ellie.js'></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,8 +30,20 @@
   </script>
 </head>
 <body>
+<div id="modals-container">
+  <div class="ui modal basic inverted" id="new-client-special-popup">
+    <div class="ui icon header">Welcome to Ellie's Massage & Bodywork.</div>
+    <div class="content">
+      <p>New clients enjoy $20 off your first appointment!</p>
+    </div>
+    <div class="actions">
+      <div class="ui grey cancel basic button">Continue to site</div>
+      <div class="ui teal basic button scroll-to-contact" id="popup-book-action">Book Now</div>
+    </div>
+  </div>
+</div>
 <div class="page">
-  <div class="animated fadeInDown drop-shadow" id="header">
+  <div class="animated fadeInDown" id="header">
     <div class="hide-desktop animated fadeInDown hamburger-container">
       <i class="sidebar-trigger fa fa-bars" aria-hidden="true"></i>
     </div>
@@ -79,11 +92,17 @@
         <div class="avatar"></div>
       </div>
       <div class="description-container">
-        <div class="description-title">Ellie Mae</div>
-        <div class="description-content">I am a California certified Massage Therapist who provides massage therapy on an outcall (home visit) basis. With years of experience as a massage professional in both the spa and clinical setting, I am dedicated to giving my clients thoughtful, personalized treatments that best fit their needs.</div>
+        <h1 class="description-title">Ellie Mae</h1>
+        <h2 class="description-content">I am a California certified Massage Therapist who provides massage therapy on an outcall (home visit) basis. With years of experience as a massage professional in both the spa and clinical setting, I am dedicated to giving my clients thoughtful, personalized treatments that best fit their needs.</h2>
         <div class="button-container animated fadeInDown">
           <button class='scroll-to-contact ui button green'>Book with me!</button>
         </div>
+      </div>
+      <div class="social-media-links-container">
+        <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-tumblr fa-2x" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
@@ -177,17 +196,27 @@
     <div class="title">Contact</div>
     <div class="body">
       <div class="contact-item">
-        <div class="label">Phone</div>
-        <div class="value"><a href="tel:949-873-6071">(949)873-6071</a></div>
+        <button class="ui button green">
+          <a href="tel:949-873-6071">(949) 873-6071</a>
+        </button>
       </div>
       <div class="contact-item book-container">
         <button class="ui button green">
           <a href="mailto:bookwithellie@gmail.com">Send me a message</a>
         </button>
       </div>
-      <div class="note">I am currently only taking clients in Costa Mesa while I am looking into obtaining proper permits to work in other cities. Please contact me with any questions you have! I woud love to hear from you!</div>
-      <div>
-        <div class="note">CAMTC #37786 CM Massage establishment #17-9958</div>
+      <div class="contact-item book-with-vagaro-container">
+        <button class="ui button green">
+          <a href="">Book with Vagaro</a>
+        </button>
+      </div>
+      <div class="note-container">
+        <div>
+          <div class="note clients-note">I am currently only taking clients in Costa Mesa while I am looking into obtaining proper permits to work in other cities. Please contact me with any questions you have! I woud love to hear from you!</div>
+        </div>
+        <div>
+          <div class="note foot">CAMTC #37786 CM Massage establishment #17-9958</div>
+        </div>
       </div>
     </div>
   </div>
